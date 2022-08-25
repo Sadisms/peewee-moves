@@ -679,7 +679,7 @@ class DatabaseManager:
         :return: File instance.
         :rtype: io.FileIO
         """
-        return open(self.get_filename(migration), mode)
+        return open(self.get_filename(migration), mode, encoding='utf-8')
 
     def write_migration(self, migration, name, upgrade='pass', downgrade='pass'):
         """
