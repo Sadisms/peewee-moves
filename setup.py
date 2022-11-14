@@ -11,11 +11,10 @@ with open(path.join(root_dir, 'README.rst'), encoding='utf-8') as f:
 with open(path.join(root_dir, 'requirements.txt'), encoding='utf-8') as f:
     install_requires = list(map(str.strip, f.readlines()))
 
-from peewee_moves import __version__
 
 setup(
     name='peewee-moves',
-    version=__version__,
+    version='2.1.0',
 
     description='Simple and flexible migration manager for Peewee ORM.',
     long_description=long_description,
